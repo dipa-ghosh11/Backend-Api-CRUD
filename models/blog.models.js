@@ -6,12 +6,15 @@ const userSchema=new mongoose.Schema({
         required: true
     },
 
-    date: {
+    createdAt:{
         type: Date,
-        required: true
+        default: Date.now
+    }, 
+    author:{
+        type:String,
+        required:true
     },
-
-    blog:{
+    content:{
         type:String,
         required: true
     },
