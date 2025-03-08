@@ -10,7 +10,7 @@ const userSchema=new mongoose.Schema({
         type: Date,
         required: true
     },
-    
+
     blog:{
         type:String,
         required: true
@@ -18,3 +18,5 @@ const userSchema=new mongoose.Schema({
     
 
 })
+
+export const BLOG=mongoose.model("BLOG", userSchema);
